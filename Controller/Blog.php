@@ -10,6 +10,8 @@ namespace TestProject\Controller;
 
 class Blog
 {
+    const MAX_POSTS = 5;
+
     protected $oUtil, $oModel;
     private $_iId;
 
@@ -34,10 +36,9 @@ class Blog
     // Homepage
     public function index()
     {
-        $this->oUtil->oPosts = $this->oModel->get(0, 5); // Get only the latest 5 posts
+        $this->oUtil->oPosts = $this->oModel->get(0, self::MAX_POSTS); // Get only the latest X posts
 
         $this->oUtil->getView('index');
-
     }
 
     public function post()
