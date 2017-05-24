@@ -21,7 +21,7 @@ class Admin extends Blog
             $this->oModel = new \TestProject\Model\Admin;
 
             $sDbPassword =  $this->oModel->login($_POST['email']);
-            if (password_verify($sDbPassword, $_POST['email']))
+            if (password_verify($sDbPassword, $_POST['password']))
             {
                 $_SESSION['is_logged'] = 1; // Admin is logged now
                 header('Location: ' . ROOT_URL . '?p=blog&a=all');
