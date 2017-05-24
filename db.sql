@@ -1,7 +1,7 @@
 --
 --
 -- Author           Pierre-Henry Soria <phy@hizup.uk>
--- Copyright        (c) 2015, Pierre-Henry Soria. All Rights Reserved.
+-- Copyright        (c) 2015-2017, Pierre-Henry Soria. All Rights Reserved.
 -- License          Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>
 -- Link             http://hizup.uk
 --

@@ -1,12 +1,14 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <phy@hizup.uk>
- * @copyright        (c) 2015, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2015-2017, Pierre-Henry Soria. All Rights Reserved.
  * @license          Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>
  * @link             http://hizup.uk
  */
 
 namespace TestProject\Engine;
+
+use TestProject\Engine\Pattern\Singleton;
 
 // First, include necessary Pattern classes
 require_once __DIR__ . '/Pattern/Base.trait.php';
@@ -14,7 +16,7 @@ require_once __DIR__ . '/Pattern/Singleton.trait.php';
 
 class Loader
 {
-    use \TestProject\Engine\Pattern\Singleton; // Thanks Trait feature of PHP 5.4, I don't duplicate pattern code
+    use Singleton; // Thanks Trait feature of PHP 5.4, I don't duplicate pattern code
 
     public function init()
     {
@@ -33,5 +35,4 @@ class Loader
         if (is_file(ROOT_PATH . $sClass . '.php'))
             require_once ROOT_PATH . $sClass . '.php';
     }
-
 }
