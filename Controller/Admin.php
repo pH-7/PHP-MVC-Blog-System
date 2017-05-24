@@ -15,16 +15,20 @@ class Admin extends Blog
         if ($this->isLogged())
             header('Location: ' . ROOT_URL . '?p=blog&a=all');
 
-        if (isset($_POST['email'], $_POST['password'])) {
+        if (isset($_POST['email'], $_POST['password']))
+        {
             $this->oUtil->getModel('Admin');
             $this->oModel = new \TestProject\Model\Admin;
 
             $sDbPassword =  $this->oModel->login($_POST['email']);
-            if (password_verify($sDbPassword, $_POST['email'])) {
+            if (password_verify($sDbPassword, $_POST['email']))
+            {
                 $_SESSION['is_logged'] = 1; // Admin is logged now
                 header('Location: ' . ROOT_URL . '?p=blog&a=all');
                 exit;
-            } else {
+            }
+            else
+            {
                 $this->oUtil->sErrMsg = 'Incorrect Login!';
             }
         }
@@ -34,7 +38,8 @@ class Admin extends Blog
 
     public function logout()
     {
-        if (!$this->isLogged()) exit;
+        if (!$this->isLogged())
+            exit;
 
         // If there is a session, destroy it to disconnect the admin
         if (!empty($_SESSION))
