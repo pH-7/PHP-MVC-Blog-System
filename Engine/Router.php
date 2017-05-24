@@ -32,5 +32,4 @@ class Router
             call_user_func(array(new $sDefCtrl, 'notFound'));
         }
     }
-
 }

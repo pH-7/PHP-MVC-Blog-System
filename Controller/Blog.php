@@ -129,5 +129,4 @@ class Blog
     {
         return !empty($_SESSION['is_logged']);
     }
-
 }

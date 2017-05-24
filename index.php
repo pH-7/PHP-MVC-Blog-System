@@ -8,6 +8,7 @@
 
 // Note, the script requires PHP 5.5 or higher
 namespace TestProject;
+
 use TestProject\Engine as E;
 
 if (version_compare(PHP_VERSION, '5.5.0', '<'))
