@@ -46,11 +46,11 @@ HTML and CSS code should be kept to the minimum needed to make the website funct
 
 ## Server Requirements of the Web App
 
-* Application Server* PHP 5.5.0 or higher.
+* **Application Server** PHP 5.5.0 or higher.
 
-* PHP Extension* mbstring
+* **PHP Extension** mbstring
 
-* Database MySQL/MariaDB 5* or higher.
+* **Database MySQL/MariaDB 5** or higher.
 
 
 ## The Author
