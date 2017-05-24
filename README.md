@@ -8,7 +8,7 @@ This *PHP Blog System* has an MVC pattern, uses Traits (PHP 5.4), Namespace (PHP
 The project was a *PHP Challenge Project* I have done.
 
 
-## Why this PHP 5.4 Project can be very Useful for You?
+## Why this MVC Blog System can be very Useful for You?
 
 If you need to code a simple website under a Professional and very nice/clean code (as I really enjoy doing), this script will be very useful in order to *start on good basis* and *save time and money*.
 
@@ -19,7 +19,7 @@ However, if you need to build a blog system, again this project can be used as a
 
 ### Requirements
 
-* The project should be written in object-oriented PHP targeting version 5.3 or higher
+* The project should be written in object-oriented PHP targeting version 5.5 or higher
 * It should be all self-written, no existing frameworks or libraries
 * It should have good security (e.g., hashed passwords, protect against SQL injection, shouldn't have any error when we try to change URL query strings or to hack it, etc)
 * Should use a MySQL database to store admin account and article data
